@@ -19,8 +19,12 @@ public class RegistrationEvent {
 	@ProcessVariable
 	private Object name;
 
+	@Inject
+	@ProcessVariable
+	private Object listenerSet;
+
 	public void authorized() {
-		log.debug("authorized " + name);
+		log.debug("authorized " + name + " " + listenerSet);
 	}
 
 	public void notAuthorized() {

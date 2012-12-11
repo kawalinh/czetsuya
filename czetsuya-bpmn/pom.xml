@@ -126,7 +126,7 @@
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-cdi</artifactId>
-			<version>5.10</version>
+			<version>5.11</version>
 		</dependency>
 	</dependencies>
 </project>

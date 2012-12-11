@@ -17,10 +17,11 @@
 		<property name="transactionsExternallyManaged" value="true" />
 		<property name="databaseSchemaUpdate" value="true" />
 		
+		<property name="history" value="full" />
 		<property name="mailServerHost" value="smtp.gmail.com"></property>
 		<property name="mailServerPort" value="465"></property>
 		<property name="mailServerDefaultFrom" value="maryuramius@gmail.com"></property>
-		<property name="mailServerUsername" value="maryuramius"></property>
+		<property name="mailServerUsername" value="maryuramius@gmail.com"></property>
 		<property name="mailServerPassword" value="maryuramius02"></property>
 	</bean>
 
