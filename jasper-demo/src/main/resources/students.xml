@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<name>edward legaspi</name>
+		<age>28</age>
+		<address>los banos, laguna</address>
+	</student>
+	<student>
+		<name>glaiza legaspi</name>
+		<age>27</age>
+		<address>los banos, laguna</address>
+	</student>
+	<student>
+		<name>rinoa heartilly</name>
+		<age>19</age>
+		<address>final fantasy viii</address>
+	</student>
+</students>
