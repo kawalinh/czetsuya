@@ -1,0 +1,5 @@
+<glassfish-web-app>
+	<context-root>/czetsuya-shiro</context-root>
+	<class-loader delegate="true" />
+	<parameter-encoding default-charset="UTF-8" />
+</glassfish-web-app>

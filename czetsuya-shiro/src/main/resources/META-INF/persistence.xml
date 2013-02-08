@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="2.0">
+	<persistence-unit name="dropshipPU">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>sidoDemoDS</jta-data-source>
+		
+		<class>com.czetsuya.shiro.model.user.Role</class>
+		<class>com.czetsuya.shiro.model.user.User</class>
+		<class>com.czetsuya.shiro.model.user.Permission</class>
+	
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.hbm2ddl.auto" value="true" />
+			<property name="connection.autocommit" value="true" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.format_sql" value="false" />
+			<property name="hibernate.cache.region.factory_class"
+				value="org.hibernate.cache.ehcache.EhCacheRegionFactory" />
+			<property name="hibernate.cache.use_query_cache" value="true" />
+			<property name="hibernate.cache.use_second_level_cache"
+				value="true" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
