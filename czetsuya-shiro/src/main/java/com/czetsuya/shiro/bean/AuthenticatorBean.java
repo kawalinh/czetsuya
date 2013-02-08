@@ -36,7 +36,7 @@ public class AuthenticatorBean {
 	public String login() {
 		Subject subject = SecurityUtils.getSubject();
 		if (subject.isAuthenticated()) {
-			log.debug("[dropship-ejbs] active subject={}, user={}", subject, subject.getPrincipal());
+			log.debug("active subject={}, user={}", subject, subject.getPrincipal());
 
 			String role = getRole(subject);
 
@@ -44,7 +44,7 @@ public class AuthenticatorBean {
 			log.debug("redirecting to {} for role={}", landingPage, getRole(subject));
 			return landingPage;
 		} else {
-			log.debug("[dropship-ejbs] login to the system with user={}, password={}", getUsername(), getPassword());
+			log.debug("login to the system with user={}, password={}", getUsername(), getPassword());
 			AuthenticationToken token = new UsernamePasswordToken(getUsername(), getPassword());
 			try {
 				subject.login(token);
@@ -62,7 +62,7 @@ public class AuthenticatorBean {
 				log.debug("redirecting to {} for role={}", landingPage, role);
 				return landingPage;
 			} catch (Exception e) {
-				log.error("[dropship-ejbs] error login {}", e.getMessage());
+				log.error("error login {}", e.getMessage());
 				FacesContext.getCurrentInstance().addMessage(null,
 						new FacesMessage(FacesMessage.SEVERITY_ERROR, "invalid account", "invalid account"));
 				return "";

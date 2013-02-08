@@ -11,6 +11,23 @@
 	<meta name="author" content="czetsuya@gmail.com"></meta>
 </h:head>
 <h:body>
-	login
+	<h:form>
+		<div>
+			<h:panelGrid columns="2">
+				<h:outputLabel for="username" value="#{msgs['field.username']}"></h:outputLabel>
+				<h:inputText required="true" id="username"
+					value="#{authenticatorBean.username}"></h:inputText>
+				<h:outputLabel for="password" value="#{msgs['field.password']}"></h:outputLabel>
+				<h:inputSecret required="true" id="password"
+					value="#{authenticatorBean.password}"></h:inputSecret>
+				<f:facet name="footer">
+					<h:messages globalOnly="true" redisplay="false" showDetail="true"
+						escape="false" showSummary="false"></h:messages>
+					<h:commandButton action="#{authenticatorBean.login()}"
+						value="#{msgs['action.login']}" ajax="false"></h:commandButton>
+				</f:facet>
+			</h:panelGrid>
+		</div>
+	</h:form>
 </h:body>
 </html>
