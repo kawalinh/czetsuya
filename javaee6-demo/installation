@@ -1,0 +1,7 @@
+This tutorial assumes that you are using Glassfish 3.1.2.2 server and postgresql database.
+
+1.) Make sure that you copy postgresql jdbc jar inside GLASSFISH_HOME/glassfish/domains/domain1/lib. Or change the domain name to whatever you are using.
+2.) Create a JDBC Connection Pool - javaee6DemoPool.
+3.) Create a JDBC Resource - javaee6DemoDS.
+4.) Run maven install.
+5.) Deploy the app to the app server.
