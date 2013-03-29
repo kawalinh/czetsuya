@@ -1,0 +1,6 @@
+DataSource:
+-dropshipActivitiDS
+-dropshipDS
+
+Mail Session
+-mailSession
